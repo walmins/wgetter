@@ -339,8 +339,8 @@ def download(link, outdir='.', chunk_size=4096):
         filename = filenamealt
 
     # add numeric '(x)' suffix if filename already exists
-    if os.path.exists(os.path.join(outdir, filename)):
-        filename = filename_fix_existing(filename, outdir)
+    # if os.path.exists(os.path.join(outdir, filename)):
+    #    filename = filename_fix_existing(filename, outdir)
     filename = os.path.join(outdir, filename)
 
     shutil.move(tmpfile, filename)
