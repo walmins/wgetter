@@ -85,7 +85,6 @@ def get_console_width():
             from ctypes import (
                 c_short as SHORT, c_ushort as WORD, c_ulong as DWORD)
         console_handle = windll.kernel32.GetStdHandle(STD_OUTPUT_HANDLE)
-
         # CONSOLE_SCREEN_BUFFER_INFO Structure
         class COORD(Structure):
             _fields_ = [("X", SHORT), ("Y", SHORT)]
